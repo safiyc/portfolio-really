@@ -2,35 +2,91 @@
     box-sizing: border-box;
 }
 
-div {
-    height: 100px;
+html {
+    background: grey;
 }
 
-.grid-container {
-    display: grid;
-    grid-template-areas:
-    'header header header header header header header header header'
-    'left content content content content content content content content'
-    'footer footer footer footer footer footer footer footer footer'
+body, html {
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
+    font-family: Arial;
 }
 
-.header {
-    grid-area: header;
-    background: lightblue;
+.wrapper {
+    border: 1px dashed black;
+    padding: 10px 20px;
 }
 
-.left {
-    grid-area: left;
-    background: pink;
+.about_me_img_desc {
+    display: flex;
+    justify-content: space-between;
+    text-align: justify;
 }
 
-.content {
-    grid-area: content;
-    background: lightgreen;
+.about_me_img {
+    background: lightgrey;
+    min-width: 250px;
+    height: 250px;
 }
 
-.footer {
-    grid-area: footer;
-    background: gray;
+.nav_links {
+    background: lightgrey;
 }
 
+.main {
+    display: flex;
+}
+
+.side_links {
+    background: lightgrey;
+}
+
+.side_content {
+    margin: 10px 20px;
+}
+
+.ul_horizontal {
+    display: flex;
+    list-style-type: none;
+}
+
+li {
+    margin: 10px;
+}
+
+.skills_list {
+    background: lightgrey;
+    text-align: center;
+}
+
+.skill_icons {
+    width: 40px;
+    
+}
+
+.projects {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin: 0 auto;
+    border: 1px dashed black;
+    width: 450px;
+}
+
+.project {
+    background: lightgrey;
+    width: 100px;
+    height: 150px;
+    margin: 10px;
+}
+
+.contact {
+    background: lightgrey;
+    height: 150px;
+}
+
+footer {
+    background: lightgrey;
+    text-align: center;
+}
