@@ -1,5 +1,6 @@
 * {
     box-sizing: border-box;
+    border: 1px dashed black;
 }
 
 html {
@@ -10,18 +11,27 @@ body, html {
     margin: 0;
     padding: 0;
     min-height: 100vh;
+    min-width: 375px;
     font-family: Arial;
 }
 
 .wrapper {
-    border: 1px dashed black;
-    padding: 10px 20px;
+    margin: 0 auto;
+    padding: 10px 20px 0;
 }
 
-.about_me_img_desc {
+h2 {
+    text-align: center;
+}
+
+.about_me_main {
     display: flex;
     justify-content: space-between;
     text-align: justify;
+}
+
+.about_me_main > p {
+    margin: 0 10px;
 }
 
 .about_me_img {
@@ -30,39 +40,44 @@ body, html {
     height: 250px;
 }
 
+.about_me_extra > p {
+    margin: 0 10px;
+}
+
 .nav_links {
     background: lightgrey;
+    margin: 0 auto;
 }
 
-.main {
+ul {
     display: flex;
-}
-
-.side_links {
-    background: lightgrey;
-}
-
-.side_content {
-    margin: 10px 20px;
-}
-
-.ul_horizontal {
-    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
     list-style-type: none;
+    padding: 0;
 }
 
 li {
     margin: 10px;
 }
 
-.skills_list {
-    background: lightgrey;
+.skills {
+    background: lightgray;
+}
+
+.skill_list {
+    font-size: 12px;
+    font-weight: bold;
     text-align: center;
+    margin: 0 5px;
 }
 
 .skill_icons {
     width: 40px;
-    
+}
+
+.projects_side_links {
+    display: none;
 }
 
 .projects {
@@ -70,15 +85,37 @@ li {
     flex-wrap: wrap;
     justify-content: space-around;
     margin: 0 auto;
-    border: 1px dashed black;
-    width: 450px;
+    max-width: 800px;
 }
 
 .project {
     background: lightgrey;
-    width: 100px;
-    height: 150px;
+    width: 210px;
+    height: 275px;
     margin: 10px;
+    text-align: center;
+}
+
+.project_frame {
+    background: white;
+    width: 190px;
+    height: 190px;
+    margin: 10px auto;
+}
+
+.project_info_box {
+    margin-top: 15px;
+    font-weight: bold;
+}
+
+.project_info_title {
+    margin: 5px auto;
+}
+
+.project_info_tech {
+    margin: 5px auto;
+    font-size: 15px;
+    font-weight: lighter;
 }
 
 .contact {
@@ -89,4 +126,45 @@ li {
 footer {
     background: lightgrey;
     text-align: center;
+    line-height: 30px;
+    margin-top: 10px;
+}
+
+/* mobile screen */
+@media only screen and (max-width: 600px) {
+    .about_me_main {
+        display: flex;
+        flex-direction: column-reverse;
+        text-align: justify;
+    }
+
+    .projects_section {
+        display: flex;
+    }
+
+    h4 {
+        text-align: center;
+    }
+
+    .projects_side_links {
+        display: block;
+        background: lightgrey;
+    }
+
+    .ul_vertical {
+        display: block;
+    }
+
+    .projects_side_right {
+        margin: 0;
+    }
+
+    .projects {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .project {
+        margin: 5px auto;
+    }
 }
