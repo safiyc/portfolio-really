@@ -44,9 +44,16 @@ h2 {
     margin: 0 10px;
 }
 
-.nav_links {
+#nav_links {
     background: lightgrey;
     margin: 0 auto;
+    z-index: 10;
+}
+
+.nav_links_sticky {
+    position: sticky;
+    position: -webkit-sticky; /* Safari */
+    top: 0;
 }
 
 ul {
@@ -148,7 +155,14 @@ footer {
 
     .projects_side_links {
         display: block;
-        background: lightgrey;
+        position: sticky;
+        position: -webkit-sticky; /* Safari */
+        top: 75px;
+        height: 100%;
+        /* unable to make height 100%
+        of.projects-section when sticky;
+        background color wont 100% height */
+        /* background: lightgrey; */
     }
 
     .ul_vertical {
