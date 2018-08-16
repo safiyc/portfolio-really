@@ -46,10 +46,11 @@ h2 {
 
 #nav_links {
     background: lightgrey;
-    margin: 0 auto;
+    margin: 10px auto 0;
     z-index: 10;
 }
 
+/* need to fix: mobile view sticky is off by y pixels */
 .nav_links_sticky {
     position: sticky;
     position: -webkit-sticky; /* Safari */
@@ -62,6 +63,7 @@ ul {
     justify-content: center;
     list-style-type: none;
     padding: 0;
+    margin: 0;
 }
 
 li {
@@ -99,7 +101,8 @@ li {
     background: lightgrey;
     width: 210px;
     height: 275px;
-    margin: 10px;
+    /* margin: 10px; */
+    padding-top: 2px;
     text-align: center;
 }
 
@@ -137,6 +140,25 @@ footer {
     margin-top: 10px;
 }
 
+a {
+    color: black;
+    text-decoration: none;
+}
+
+.anchor {
+    display: block;
+    visibility: hidden;
+    margin-top: -25px;
+    padding-top: 37px;
+}
+
+.project_anchor {
+    display: block;
+    visibility: hidden;
+    margin-top: -25px;
+    padding-top: 37px;
+}
+
 /* mobile screen */
 @media only screen and (max-width: 600px) {
     .about_me_main {
@@ -145,7 +167,7 @@ footer {
         text-align: justify;
     }
 
-    .projects_section {
+    .projects_all {
         display: flex;
     }
 

@@ -8,7 +8,7 @@
     </head>
     <body>
         <div class="wrapper">
-            <div class="about_me_section">
+            <div id="about_me_section">
                     <h2>About Me</h2>
                     <div class="about_me_main">
                         <p>
@@ -27,113 +27,156 @@
             </div>
             <div id="nav_links">
                 <ul>
-                    <li>Skills</li>
-                    <li>Projects</li>
-                    <li>Contact</li>
-                    <li>Top</li>
+                    <li><a href="#skills_anchor">Skills</a></li>
+                    <li><a href="#projects_anchor">Projects</a></li>
+                    <li><a href="#contact_anchor">Contact</a></li>
+                    <li><a href="#about_me_section">Top</a></li>
                 </ul>
             </div>
             <div class="content">
-                <h2>Skills</h2>
-                <div class="skills">
-                    <ul>
-                        <li class="skill_list"><img src="img/html-icon2.png" alt="icon" class="skill_icons"><br />HTML5</li>
-                        <li class="skill_list"><img src="img/css-icon2.png" alt="icon" class="skill_icons"><br />CSS3</li>
-                        <li class="skill_list"><img src="img/js-icon2.png" alt="icon" class="skill_icons"><br />JavaScript</li>
-                        <li class="skill_list"><img src="img/ruby-icon2.png" alt="icon" class="skill_icons"><br />Ruby</li>
-                        <li class="skill_list"><img src="img/photoshop-icon2.png" alt="icon" class="skill_icons"><br />PhotoShop</li>
-                    </ul>
-                    <p>I have worked on projects spanding the backend and the frontend, solo and in a group setting, implementing processes like TDD/BDD, frequent git commits, commenting, and DRY code.</p>
-                    <p>My project highlights demonstrate my experiences with Bootstrap (CSS), Angular (JS), Node (JS), Rails (Ruby), Sinatra (Ruby), PostgreSQL (Database), Firebase (Database), TypeScript (JS),Jasmine (Testing), Karma (Testing), RSpec (Testing), AJAX, API, and more.</p>
-                </div>
-                <div class="projects_section">
-                    <div class="projects_side_links">
-                        <h4>Projects</h4>
-                        <ul class="ul_vertical">
-                            <li>Project Name</li>
-                            <li>Project Name</li>
-                            <li>Project Name</li>
-                            <li>Project Name</li>
-                            <li>Project Name</li>
-                            <li>Project Name</li>
-                            <li>Project Name</li>
-                            <li>Project Name</li>
-                            <li>Project Name</li>
+                <a id="skills_anchor" class="anchor"></a>
+                <div id="skills_section">
+                    <h2>Skills</h2>
+                    <div class="skills">
+                        <ul>
+                            <li class="skill_list"><img src="img/html-icon2.png" alt="icon" class="skill_icons"><br />HTML5</li>
+                            <li class="skill_list"><img src="img/css-icon2.png" alt="icon" class="skill_icons"><br />CSS3</li>
+                            <li class="skill_list"><img src="img/js-icon2.png" alt="icon" class="skill_icons"><br />JavaScript</li>
+                            <li class="skill_list"><img src="img/ruby-icon2.png" alt="icon" class="skill_icons"><br />Ruby</li>
+                            <li class="skill_list"><img src="img/photoshop-icon2.png" alt="icon" class="skill_icons"><br />PhotoShop</li>
                         </ul>
+                        <p>I have worked on projects spanding the backend and the frontend, solo and in a group setting, implementing processes like TDD/BDD, frequent git commits, commenting, and DRY code.</p>
+                        <p>My project highlights demonstrate my experiences with Bootstrap (CSS), Angular (JS), Node (JS), Rails (Ruby), Sinatra (Ruby), PostgreSQL (Database), Firebase (Database), TypeScript (JS),Jasmine (Testing), Karma (Testing), RSpec (Testing), AJAX, API, and more.</p>
                     </div>
-                    <div class="projects_side_right">
-                        <h2>Projects</h2>
-                        <p>The source code for these programs and more can be found on my <a href="#" target="blank">Github</a> page.</p>
-                        <div class="projects">
-                            <div class="project">
-                                <div class="project_frame"></div>
-                                <div class="project_info_box">
-                                    <p class="project_info_title">Reveal The Image</p>
-                                    <p class="project_info_tech">HTML CSS JS</p>
+                </div>
+                <a id="projects_anchor" class="anchor"></a>
+                <div id="projects_section">
+                    <h2>Projects</h2>
+                    <p>The source code for these programs and more can be found on my <a href="#" target="blank">Github</a> page.</p>
+                    <div class="projects_all">
+                        <div class="projects_side_links">
+                            <h4>Projects</h4>
+                            <ul class="ul_vertical">
+                                <li><a href="#project_1">Project Name</a></li>
+                                <li><a href="#project_2">Project Name</a></li>
+                                <li><a href="#project_3">Project Name</a></li>
+                                <li><a href="#project_4">Project Name</a></li>
+                                <li><a href="#project_5">Project Name</a></li>
+                                <li><a href="#project_6">Project Name</a></li>
+                                <li><a href="#project_7">Project Name</a></li>
+                                <li><a href="#project_8">Project Name</a></li>
+                                <li><a href="#project_9">Project Name</a></li>
+                            </ul>
+                        </div>
+                        <div class="projects_side_right">
+                            
+                            <div class="projects">
+                                <div>
+                                    <a id="project_1" class="project_anchor"></a>
+                                    <div class="project">
+                                        <div class="project_frame"></div>
+                                        <div class="project_info_box">
+                                            <p class="project_info_title">Reveal The Image</p>
+                                            <p class="project_info_tech">HTML CSS JS</p>
+                                        </div>
+                                    </div>
                                 </div>
-                            </div>
-                            <div class="project">
-                                <div class="project_frame"></div>
-                                <div class="project_info_box">
-                                    <p class="project_info_title">Rock Paper Scissors</p>
-                                    <p class="project_info_tech">HTML CSS JS</p>
+                                <div>
+                                    <a id="project_2" class="project_anchor"></a>
+                                    <div class="project">
+                                        <div class="project_frame"></div>
+                                        <div class="project_info_box">
+                                            <p class="project_info_title">Rock Paper Scissors</p>
+                                            <p class="project_info_tech">HTML CSS JS</p>
+                                        </div>
+                                    </div>
                                 </div>
-                            </div>
-                            <div class="project">
-                                <div class="project_frame"></div>
-                                <div class="project_info_box">
-                                    <p class="project_info_title">Google UI Clone</p>
-                                    <p class="project_info_tech">HTML CSS JS</p>
+                                <div>
+                                    <a id="project_3" class="project_anchor"></a>
+                                    <div class="project">
+                                        <div class="project_frame"></div>
+                                        <div class="project_info_box">
+                                            <p class="project_info_title">Google UI Clone</p>
+                                            <p class="project_info_tech">HTML CSS JS</p>
+                                        </div>
+                                    </div>
                                 </div>
-                            </div>
-                            <div class="project">
-                                <div class="project_frame"></div>
-                                <div class="project_info_box">
-                                    <p class="project_info_title">Reveal The Image</p>
-                                    <p class="project_info_tech">HTML CSS JS</p>
+                                <div>
+    
+                                    <a id="project_4" class="project_anchor"></a>
+                                    <div class="project">
+                                        <div class="project_frame"></div>
+                                        <div class="project_info_box">
+                                            <p class="project_info_title">Reveal The Image</p>
+                                            <p class="project_info_tech">HTML CSS JS</p>
+                                        </div>
+                                    </div>
                                 </div>
-                            </div>
-                            <div class="project">
-                                <div class="project_frame"></div>
-                                <div class="project_info_box">
-                                    <p class="project_info_title">Reveal The Image</p>
-                                    <p class="project_info_tech">HTML CSS JS</p>
+                                <div>
+    
+                                    <a id="project_5" class="project_anchor"></a>
+                                    <div class="project">
+                                        <div class="project_frame"></div>
+                                        <div class="project_info_box">
+                                            <p class="project_info_title">Reveal The Image</p>
+                                            <p class="project_info_tech">HTML CSS JS</p>
+                                        </div>
+                                    </div>
                                 </div>
-                            </div>
-                            <div class="project">
-                                <div class="project_frame"></div>
-                                <div class="project_info_box">
-                                    <p class="project_info_title">Reveal The Image</p>
-                                    <p class="project_info_tech">HTML CSS JS</p>
+                                <div>
+    
+                                    <a id="project_6" class="project_anchor"></a>
+                                    <div class="project">
+                                        <div class="project_frame"></div>
+                                        <div class="project_info_box">
+                                            <p class="project_info_title">Reveal The Image</p>
+                                            <p class="project_info_tech">HTML CSS JS</p>
+                                        </div>
+                                    </div>
                                 </div>
-                            </div>
-                            <div class="project">
-                                <div class="project_frame"></div>
-                                <div class="project_info_box">
-                                    <p class="project_info_title">Reveal The Image</p>
-                                    <p class="project_info_tech">HTML CSS JS</p>
+                                <div>
+    
+                                    <a id="project_7" class="project_anchor"></a>
+                                    <div class="project">
+                                        <div class="project_frame"></div>
+                                        <div class="project_info_box">
+                                            <p class="project_info_title">Reveal The Image</p>
+                                            <p class="project_info_tech">HTML CSS JS</p>
+                                        </div>
+                                    </div>
                                 </div>
-                            </div>
-                            <div class="project">
-                                <div class="project_frame"></div>
-                                <div class="project_info_box">
-                                    <p class="project_info_title">Reveal The Image</p>
-                                    <p class="project_info_tech">HTML CSS JS</p>
+                                <div>
+    
+                                    <a id="project_8" class="project_anchor"></a>
+                                    <div class="project">
+                                        <div class="project_frame"></div>
+                                        <div class="project_info_box">
+                                            <p class="project_info_title">Reveal The Image</p>
+                                            <p class="project_info_tech">HTML CSS JS</p>
+                                        </div>
+                                    </div>
                                 </div>
-                            </div>
-                            <div class="project">
-                                <div class="project_frame"></div>
-                                <div class="project_info_box">
-                                    <p class="project_info_title">Website Mockup</p>
-                                    <p class="project_info_tech">PhotoShop</p>
+                                <div>
+    
+                                    <a id="project_9" class="project_anchor"></a>
+                                    <div class="project">
+                                        <div class="project_frame"></div>
+                                        <div class="project_info_box">
+                                            <p class="project_info_title">Website Mockup</p>
+                                            <p class="project_info_tech">PhotoShop</p>
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
-                <h2>Contact</h2>
-                <div class="contact">
-                    This will have my contact info or a contact form
+                <a id="contact_anchor" class="anchor"></a>
+                <div id="contact_section">
+                    <h2>Contact</h2>
+                    <div class="contact">
+                        This will have my contact info or a contact form
+                    </div>
                 </div>
                 <footer>Website By Safiy Cham</footer>
             </div>

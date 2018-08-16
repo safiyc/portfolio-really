@@ -11,3 +11,18 @@ function fixedToTop() {
         navLinks.classList.remove("nav_links_sticky");
     }
 }
+
+
+
+
+// need to fix: smooth scrolling to anchor
+// let skillsSection = document.querySelector("#skills_section");
+
+// skillsSection = skillsSection.offsetTop + 100;
+
+// console.log(skillsSection);
+
+// document.querySelector("#skills_section").scrollIntoView({
+//     // block: "start",
+//     behavior: "smooth"
+// });
