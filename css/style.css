@@ -1,6 +1,6 @@
 * {
     box-sizing: border-box;
-    border: 1px dashed black;
+    /* border: 1px dashed black; */
 }
 
 html {
@@ -17,10 +17,11 @@ body, html {
 
 .wrapper {
     margin: 0 auto;
+    width: 65%;
     padding: 10px 20px 0;
 }
 
-h2 {
+h1, h2 {
     text-align: center;
 }
 
@@ -31,29 +32,27 @@ h2 {
 }
 
 .about_me_main > p {
-    margin: 0 10px;
+    margin: 0 auto;
+    padding: 0 10px 10px 0;
 }
 
 .about_me_img {
     background: lightgrey;
-    min-width: 250px;
-    height: 250px;
-}
-
-.about_me_extra > p {
-    margin: 0 10px;
+    min-width: 55%;
+    height: 200px;
 }
 
 #nav_links {
     background: lightgrey;
     margin: 10px auto 0;
     z-index: 10;
+    transition: ease .5s;
 }
 
-/* need to fix: mobile view sticky is off by y pixels */
 .nav_links_sticky {
     position: sticky;
     position: -webkit-sticky; /* Safari */
+    box-shadow: 0 0 3px 1px black;
     top: 0;
 }
 
@@ -66,8 +65,19 @@ ul {
     margin: 0;
 }
 
-li {
-    margin: 10px;
+.nav_links_li {
+    margin: 3px auto;
+    padding: 2px;
+    transition: ease .1s;
+}
+
+.nav_links_li:hover {
+    box-shadow: 0 0 3px 0 black;
+}
+
+.nav_links_li:active {
+    background: orange;
+    box-shadow: 0 0 3px 3px black;
 }
 
 .skills {
@@ -75,14 +85,20 @@ li {
 }
 
 .skill_list {
-    font-size: 12px;
+    font-size: 16px;
     font-weight: bold;
     text-align: center;
-    margin: 0 5px;
+    margin: 0 10px;
 }
 
 .skill_icons {
-    width: 40px;
+    width: 50px;
+    transition: ease 1.5s;
+}
+
+.skill_icons:hover {
+    transform: rotate(1080deg);
+    box-shadow: 0 0 2px 2px black;
 }
 
 .projects_side_links {
@@ -128,9 +144,20 @@ li {
     font-weight: lighter;
 }
 
+.about_contact {
+    display: flex;
+    justify-content: space-between;
+    text-align: justify;
+}
+
+.about_section {
+    margin: 0 10px;
+    max-width: 50%;
+}
+
 .contact {
     background: lightgrey;
-    height: 150px;
+    height: 220px;
 }
 
 footer {
@@ -159,12 +186,36 @@ a {
     padding-top: 37px;
 }
 
+
+
 /* mobile screen */
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 650px) {
+    .wrapper {
+        margin: 0 auto;
+        width: 100%;
+        padding: 10px 20px 0;
+    }
+
     .about_me_main {
         display: flex;
         flex-direction: column-reverse;
         text-align: justify;
+    }
+
+    .about_me_main > p {
+        margin: 10px auto 0;
+        padding: 0;
+    }
+
+    .skill_list {
+        font-size: 12px;
+        font-weight: bold;
+        text-align: center;
+        margin: 0 5px;
+    }
+
+    .skill_icons {
+        width: 40px;
     }
 
     .projects_all {
@@ -173,13 +224,14 @@ a {
 
     h4 {
         text-align: center;
+        margin-top: 30px;
     }
 
     .projects_side_links {
         display: block;
         position: sticky;
         position: -webkit-sticky; /* Safari */
-        top: 75px;
+        top: 30px;
         height: 100%;
         /* unable to make height 100%
         of.projects-section when sticky;
@@ -187,12 +239,26 @@ a {
         /* background: lightgrey; */
     }
 
+    .project_li:hover {
+        box-shadow: 0 0 3px 0 black;
+    }
+
+    .project_li:active {
+        background: orange;
+        box-shadow: 0 0 3px 3px black;
+    }
+
     .ul_vertical {
         display: block;
+        margin-top: 30px;
+    }
+
+    .ul_vertical > li {
+        margin: 0 auto 25px;
     }
 
     .projects_side_right {
-        margin: 0;
+        margin: 0 auto;
     }
 
     .projects {
@@ -203,4 +269,22 @@ a {
     .project {
         margin: 5px auto;
     }
+
+    .about_contact {
+        display: flex;
+        flex-direction: column;
+        /* justify-content: space-between; */
+        text-align: justify;
+    }
+
+    .about_section {
+        margin: 10px auto 0;
+        min-width: 100%;
+    }
+    
+    .contact {
+        background: lightgrey;
+        height: 100px;
+    }
+    
 }
