@@ -30,9 +30,9 @@ h1, h2 {
 
 .section {
     border-bottom: 1px solid black;
-    -webkit-box-shadow: 0 5px 0 0 rgba(0, 0, 0, 0.25);
-    -moz-box-shadow: 0 5px 0 0 rgba(0, 0, 0, 0.25);
-    box-shadow: 0 5px 0 0 rgba(0, 0, 0, 0.25);
+    -webkit-box-shadow: 0 7px 0 -2px rgba(0, 0, 0, 0.25);
+    -moz-box-shadow: 0 7px 0 -2px rgba(0, 0, 0, 0.25);
+    box-shadow: 0 7px 0 -2px rgba(0, 0, 0, 0.25);
     padding-bottom: 10px;
     padding-top: 10px;
 }
@@ -40,7 +40,7 @@ h1, h2 {
 .about_me_main {
     position: relative;
     text-align: justify;
-    width: 60%;
+    width: 65%;
     margin: 0 auto 30px;
     padding: 15px;
     background: lightgrey;
@@ -80,21 +80,22 @@ h1, h2 {
 }
 
 .about_me_img {
+    display: block;
     width: 100%;
 }
 
 .about_me_img_overlay {
     position: absolute;
     background: white;
+    border: 2px solid black;
     top: 0;
     bottom: 0;
     right: 0;
     left: 0;
     width: 100%;
     height: 100%;
-    object-fit: cover;
     opacity: 0;
-    transition: ease .45s;
+    transition: ease .25s;
 }
 
 .about_me_frame:hover .about_me_img_overlay {
@@ -124,11 +125,9 @@ h1, h2 {
     margin: 10px auto 0;
     z-index: 10;
     transition: ease .5s;
-    -webkit-box-shadow: 0 5px 0 0 rgba(0, 0, 0, 0.25),
-                0 -5px 0 0 rgba(0, 0, 0, 0.25);
-    -moz-box-shadow: 0 5px 0 0 rgba(0, 0, 0, 0.25),
-                0 -5px 0 0 rgba(0, 0, 0, 0.25);
-    box-shadow: 0 5px 0 0 rgba(0, 0, 0, 0.25);
+    -webkit-box-shadow: 0 7px 0 -2px rgba(0, 0, 0, 0.25);
+    -moz-box-shadow: 0 7px 0 -2px rgba(0, 0, 0, 0.25);
+    box-shadow: 0 7px 0 -2px rgba(0, 0, 0, 0.25);
 }
 
 .nav_links_sticky {
@@ -154,7 +153,7 @@ ul {
     text-align: center;
     font-weight: bold;
     margin: 0 auto;
-    padding: 2px 4px;
+    padding: 2px 8px;
     transition: ease .1s;
 }
 
@@ -268,7 +267,7 @@ ul {
     position: absolute;
     background: white;
     text-align: justify;
-    padding: 5px;
+    padding: 8px;
     font-size: 15px;
     top: 0;
     bottom: 0;
@@ -277,7 +276,8 @@ ul {
     width: 100%;
     height: 100%;
     opacity: 0;
-    transition: ease .45s;
+    transition: ease .25s;
+    border: 2px solid black;
 }
 
 .project_frame:hover .project_txt_overlay {
@@ -354,8 +354,14 @@ a {
     padding-top: 37px;
 }
 
+/* Screen less than 600px */
+@media only screen and (max-width: 600px) {
+    .about_me_main {
+        width: 100%;
+    }
+}
 
-/* mobile screen (770px and down) */
+/* Screen 770px and down */
 @media only screen and (max-width: 770px) {
     .wrapper {
         margin: 0 auto;
@@ -367,12 +373,8 @@ a {
         margin-top: 0;
     }
 
-    .about_me_main {
-        width: 100%;
-    }
-
-    .modal-content {
-        width: 90%;
+    .nav_links_li {
+        padding: 2px 6px;
     }
 
     .skill_list {
@@ -393,6 +395,7 @@ a {
     h4 {
         text-align: center;
         margin-top: 30px;
+        margin-right: 15px;
     }
 
     .projects_side_links {
@@ -403,10 +406,30 @@ a {
         height: 100%;
     }
 
+    .ul_vertical {
+        display: block;
+        margin-top: 30px;
+    }
+
+    .project_li {
+        font-size: 13px;
+        line-height: 39px;
+        margin: 0 15px 10px 0;
+        padding: 5px 3px;
+        background: lightgrey;
+        text-align: center;
+        width: 110px;
+        height: 44px;
+        -webkit-box-shadow: 0 0 2px 0 black;
+        -moz-box-shadow: 0 0 2px 0 black;
+        box-shadow: 0 0 2px 0 black;
+    }
+
     .project_li:hover {
-        -webkit-box-shadow: 0 0 3px 0 black;
-        -moz-box-shadow: 0 0 3px 0 black;
-        box-shadow: 0 0 3px 0 black;
+        font-weight: bold;
+        -webkit-box-shadow: 0 0 4px 0 black;
+        -moz-box-shadow: 0 0 4px 0 black;
+        box-shadow: 0 0 4px 0 black;
     }
 
     .project_li:active {
@@ -416,13 +439,10 @@ a {
         box-shadow: 0 0 3px 3px black;
     }
 
-    .ul_vertical {
-        display: block;
-        margin-top: 30px;
-    }
-
-    .ul_vertical > li {
-        margin: 0 auto 25px;
+    .project_li > span {
+        display: inline-block;
+        vertical-align: middle;
+        line-height: 1.5;
     }
 
     .projects_side_right {

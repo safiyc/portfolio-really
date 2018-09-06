@@ -1,9 +1,10 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <meta charset="UTF-8">
+        <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" href="./css/style.css">
+        <link rel="stylesheet" href="css/style.css">
+        <link rel="icon" href="img/my_favicon.png">
         <title>Safiy Cham - Portfolio</title>
     </head>
     <body>
@@ -13,8 +14,10 @@
                 <h1>Hello World</h1>
                 <div class="about_me_main">
                     <div class="about_me_frame">
-                        <img src="img/about_me_img.jpg" alt="Laptop And Code" class="about_me_img">
-                        <img src="img/code-screen.png" alt="Screenshot of code" class="about_me_img_overlay" id="code_screen">
+                        <a href="https://github.com/safiyc" target="_blank">
+                            <img src="img/about_me_img.jpg" alt="Laptop And Code" class="about_me_img">
+                            <img src="img/code-screen.png" alt="Screenshot of Code" class="about_me_img_overlay">
+                        </a>
                     </div>
                     <p class="my_name">Safiy Cham</p>
                     <p class="my_title">Front End Web Developer</p>
@@ -24,7 +27,7 @@
                 <ul>
                     <li class="nav_links_li"><a href="#skills_anchor">Skills</a></li>
                     <li class="nav_links_li"><a href="#projects_anchor">Projects</a></li>
-                    <li class="nav_links_li"><a href="#about_contact_anchor">About Me</a></li>
+                    <li class="nav_links_li"><a href="#about_contact_anchor">About&nbsp;Me</a></li>
                     <li class="nav_links_li"><a href="#about_contact_anchor">Contact</a></li>
                     <li class="nav_links_li"><a href="#intro_anchor">Top</a></li>
                 </ul>
@@ -50,20 +53,22 @@
                 <a id="projects_anchor" class="anchor"></a>
                 <div class="section">
                     <h2>Projects</h2>
-                    <p>The source codes for these projects and other projects can be found on my <a href="#" target="blank" class="github_link">GitHub</a> page.</p>
+                    <p>
+                        The source codes for these projects and other projects can be found on my <a href="#" target="blank" class="github_link">GitHub</a> page.
+                        <br />Click on the title of a project to explore its GitHub repository.
+                        <br />Launch a project by clicking on its image.
+                    </p>
                     <div class="projects_sides">
                         <div class="projects_side_links">
                             <h4>Projects</h4>
                             <ul class="ul_vertical">
-                                <li class="project_li"><a href="#project_1">Site Mockup</a></li>
-                                <li class="project_li"><a href="#project_2">Project Name</a></li>
-                                <li class="project_li"><a href="#project_3">Project Name</a></li>
-                                <li class="project_li"><a href="#project_4">Project Name</a></li>
-                                <li class="project_li"><a href="#project_5">Project Name</a></li>
-                                <li class="project_li"><a href="#project_6">Project Name</a></li>
-                                <li class="project_li"><a href="#project_7">Project Name</a></li>
-                                <li class="project_li"><a href="#project_8">Project Name</a></li>
-                                <li class="project_li"><a href="#project_9">Project Name</a></li>
+                                <li class="project_li"><span><a href="#project_1">Reveal The Image</a></span></li>
+                                <li class="project_li"><span><a href="#project_2">Rock Paper Scissors</a></span></li>
+                                <li class="project_li"><span><a href="#project_3">Stores-Shoes Tracker</a></span></li>
+                                <li class="project_li"><span><a href="#project_4">Craftsy</a></span></li>
+                                <li class="project_li"><span><a href="#project_5">Club Manager</a></span></li>
+                                <li class="project_li"><span><a href="#project_6">Doctor Lookup</a></span></li>
+                                <li class="project_li"><span><a href="#project_7">Website Mockup</a></span></li>
                             </ul>
                         </div>
                         <div class="projects_side_right">
@@ -72,23 +77,32 @@
                                     <a id="project_1" class="project_anchor"></a>
                                     <div class="project">
                                         <div class="project_frame">
-                                            <img src="img/khmer_mockup.png" alt="Khmer Mockup" class="project_img">
-                                            <div class="project_txt_overlay" id="mockup_overlay">
-                                                A mockup of an edutainment web app on learning the Cambodian language, Khmer. I had been learning to read and write Khmer via out of print books. This mockup was born from my desire for a more accessible and user-friendly way to learn Khmer.
-                                            </div>
+                                            <a href="https://safiyc.github.io/reveal-the-image/" target="_blank">
+                                                <img src="img/reveal_the_image.png" alt="Reveal The Image" class="project_img">
+                                                <div class="project_txt_overlay">
+                                                    A game involving guessing the correct randomized hidden animal by clicking away blocks to reveal the answer. The timer counts down upon the first block click. Initials and high scores are saved from high to low in local storage.
+                                                </div>
+                                            </a>
                                         </div>
                                         <div class="project_info_box">
-                                                &lt;<a href="#" alt="Website Mockup" class="project_info_title">&nbsp;website mockup&nbsp;</a>&gt;
-                                            <p class="project_info_tech">PhotoShop</p>
+                                            &lt;<a href="#" class="project_info_title">&nbsp;reveal the image&nbsp;</a>&gt;
+                                            <p class="project_info_tech">HTML CSS JS</p>
                                         </div>
                                     </div>
                                 </div>
                                 <div>
                                     <a id="project_2" class="project_anchor"></a>
                                     <div class="project">
-                                        <div class="project_frame"></div>
+                                        <div class="project_frame">
+                                            <a href="https://safiyc.github.io/rock-paper-scissors/" target="_blank">
+                                                <img src="img/rock_paper_scissors.png" alt="Rock Paper Scissors" class="project_img">
+                                                <div class="project_txt_overlay">
+                                                    This classic game of rock, paper and scissors is played against a computer player. After 5 rounds, a winner is announced. If it is a draw on the 5th round, the game continues until a winner is determined.
+                                                </div>
+                                            </a>
+                                        </div>
                                         <div class="project_info_box">
-                                            <p class="project_info_title">Rock Paper Scissors</p>
+                                            &lt;<a href="#" class="project_info_title">&nbsp;rock paper scissors&nbsp;</a>&gt;
                                             <p class="project_info_tech">HTML CSS JS</p>
                                         </div>
                                     </div>
@@ -96,10 +110,17 @@
                                 <div>
                                     <a id="project_3" class="project_anchor"></a>
                                     <div class="project">
-                                        <div class="project_frame"></div>
+                                        <div class="project_frame">
+                                            <a href="https://stores-shoes-tracker.herokuapp.com/" target="_blank">
+                                                <img src="img/stores_shoes_tracker.png" alt="Shoes-Stores Tracker" class="project_img">
+                                                <div class="project_txt_overlay">
+                                                    This program lets the user create, update and delete stores. The user can also create, update and delete shoes and prices. Shoes can be added to stores. A store can't have duplicate shoes. 
+                                                </div>
+                                            </a>
+                                        </div>
                                         <div class="project_info_box">
-                                            <p class="project_info_title">Google UI Clone</p>
-                                            <p class="project_info_tech">HTML CSS JS</p>
+                                            &lt;<a href="https://github.com/safiyc/stores_shoes_tracker.git" target="_blank" class="project_info_title">&nbsp;stores-shoes tracker&nbsp;</a>&gt;
+                                            <p class="project_info_tech">HTML CSS Ruby Sinatra PostgreSQL</p>
                                         </div>
                                     </div>
                                 </div>
@@ -108,18 +129,19 @@
                                     <div class="project">
                                         <div class="project_frame"></div>
                                         <div class="project_info_box">
-                                            <p class="project_info_title">Reveal The Image</p>
-                                            <p class="project_info_tech">HTML CSS JS</p>
+                                            &lt;<a href="#" class="project_info_title">&nbsp;craftsy&nbsp;</a>&gt;
+                                            <p class="project_info_tech">HTML CSS Ruby Rails PostgreSQL</p>
                                         </div>
                                     </div>
                                 </div>
+                                
                                 <div>
                                     <a id="project_5" class="project_anchor"></a>
                                     <div class="project">
                                         <div class="project_frame"></div>
                                         <div class="project_info_box">
-                                            <p class="project_info_title">Reveal The Image</p>
-                                            <p class="project_info_tech">HTML CSS JS</p>
+                                            &lt;<a href="#" class="project_info_title">&nbsp;club manager&nbsp;</a>&gt;
+                                            <p class="project_info_tech">HTML CSS Angular2 NodeJS Firebase</p>
                                         </div>
                                     </div>
                                 </div>
@@ -128,38 +150,23 @@
                                     <div class="project">
                                         <div class="project_frame"></div>
                                         <div class="project_info_box">
-                                            <p class="project_info_title">Reveal The Image</p>
-                                            <p class="project_info_tech">HTML CSS JS</p>
+                                            &lt;<a href="#" class="project_info_title">&nbsp;doctor lookup&nbsp;</a>&gt;
+                                            <p class="project_info_tech">HTML CSS JS RESTful API</p>
                                         </div>
                                     </div>
                                 </div>
                                 <div>
                                     <a id="project_7" class="project_anchor"></a>
                                     <div class="project">
-                                        <div class="project_frame"></div>
-                                        <div class="project_info_box">
-                                            <p class="project_info_title">Reveal The Image</p>
-                                            <p class="project_info_tech">HTML CSS JS</p>
+                                        <div class="project_frame">
+                                            <img src="img/khmer_mockup.png" alt="Khmer Mockup" class="project_img">
+                                            <div class="project_txt_overlay">
+                                                A mockup of an edutainment web app on learning the Cambodian language, Khmer. I had been learning to read and write Khmer via out of print books. This mockup was born from a desire for a user-friendly way to learn Khmer.
+                                            </div>
                                         </div>
-                                    </div>
-                                </div>
-                                <div>
-                                    <a id="project_8" class="project_anchor"></a>
-                                    <div class="project">
-                                        <div class="project_frame"></div>
                                         <div class="project_info_box">
-                                            <p class="project_info_title">Reveal The Image</p>
-                                            <p class="project_info_tech">HTML CSS JS</p>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div>
-                                    <a id="project_9" class="project_anchor"></a>
-                                    <div class="project">
-                                        <div class="project_frame"></div>
-                                        <div class="project_info_box">
-                                            <p class="project_info_title">Website Mockup</p>
-                                            <p class="project_info_tech">PhotoShop</p>
+                                            &lt;<a href="#" class="project_info_title">&nbsp;website mockup&nbsp;</a>&gt;
+                                            <p class="project_info_tech">PHOTOSHOP</p>
                                         </div>
                                     </div>
                                 </div>
