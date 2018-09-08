@@ -43,20 +43,20 @@ h1, h2 {
     width: 65%;
     margin: 0 auto 30px;
     padding: 15px;
-    background: lightgrey;
+    background: rgb(238, 238, 238);
 }
 
 .about_me_main:before, .about_me_main:after {
     z-index: -1;
     position: absolute;
     content: "";
-    bottom: 14px;
+    bottom: 20px;
     left: 8px;
     width: 65%;
     top: 80%;
-    -webkit-box-shadow: 0 15px 6px rgba(0, 0, 0, .5);
-    -moz-box-shadow: 0 15px 6px rgba(0, 0, 0, .5);
-    box-shadow: 0 15px 6px rgba(0, 0, 0, .5);
+    -webkit-box-shadow: 0 20px 6px rgba(0, 0, 0, .5);
+    -moz-box-shadow: 0 20px 6px rgba(0, 0, 0, .5);
+    box-shadow: 0 20px 6px rgba(0, 0, 0, .5);
     -webkit-transform: rotate(-3deg);
     -moz-transform: rotate(-3deg);
     -o-transform: rotate(-3deg);
@@ -70,7 +70,7 @@ h1, h2 {
     -o-transform: rotate(4deg);
     -ms-transform: rotate(4deg);
     transform: rotate(4deg);
-    bottom: 12px;
+    bottom: 18px;
     right: 6px;
     left: auto;
 }
@@ -212,7 +212,7 @@ ul {
 
 .project {
     position: relative;
-    background: lightgrey;
+    background: rgb(238, 238, 238);
     width: 210px;
     height: 275px;
     padding-top: 2px;
@@ -268,7 +268,7 @@ ul {
     background: white;
     text-align: justify;
     padding: 8px;
-    font-size: 15px;
+    font-size: .9rem;
     top: 0;
     bottom: 0;
     left: 0;
@@ -299,7 +299,7 @@ ul {
 
 .project_info_tech {
     margin: 5px auto;
-    font-size: 15px;
+    font-size: .9rem;
     font-weight: lighter;
 }
 
