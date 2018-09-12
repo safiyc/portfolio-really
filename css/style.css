@@ -194,6 +194,10 @@ ul {
     box-shadow: 0 0 2px 2px black;
 }
 
+.projects_intro {
+    text-align: justify;
+}
+
 .projects_sides {
     margin-bottom: 20px;
 }
@@ -318,6 +322,8 @@ ul {
 
 .contact {
     height: 220px;
+    width: 80%;
+    margin: 0 auto;
 }
 
 footer {
@@ -352,6 +358,10 @@ a {
     visibility: hidden;
     margin-top: -25px;
     padding-top: 37px;
+}
+
+.contact_links:hover {
+    color: darkblue;
 }
 
 /* Screen less than 600px */
@@ -467,9 +477,17 @@ a {
     .about_section {
         margin: 10px auto 0;
         min-width: 100%;
+        padding-top: 20px;
     }
     
+    .contact_section {
+        border-bottom: 1px solid black;
+        -webkit-box-shadow: 0 7px 0 -2px rgba(0, 0, 0, 0.25);
+        -moz-box-shadow: 0 7px 0 -2px rgba(0, 0, 0, 0.25);
+        box-shadow: 0 7px 0 -2px rgba(0, 0, 0, 0.25);
+    }
+
     .contact {
-        height: 100px;
+        height: 140px;
     }
 }
