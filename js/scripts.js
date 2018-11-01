@@ -12,3 +12,7 @@ function fixedToTop() {
         navLinks.classList.remove("nav_links_sticky");
     }
 }
+
+// get current year
+let date = new Date();
+document.getElementById("copyright").textContent = date.getFullYear();

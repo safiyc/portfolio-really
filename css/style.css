@@ -298,7 +298,7 @@ ul {
 }
 
 .project_info_title:hover {
-    color: darkblue;
+    color: blue;
 }
 
 .project_info_tech {
@@ -320,10 +320,18 @@ ul {
     max-width: 50%;
 }
 
-.contact {
-    height: 220px;
-    width: 80%;
+.contact_section {
+    text-align: center;
     margin: 0 auto;
+}
+
+.contact_links {
+    color: darkblue;
+}
+
+.contact_links:hover {
+    color: black;
+    text-decoration: underline;
 }
 
 footer {
@@ -335,15 +343,6 @@ footer {
 a {
     color: black;
     text-decoration: none;
-}
-
-.github_link {
-    color: darkblue;
-}
-
-.github_link:hover {
-    color: black;
-    text-decoration: underline;
 }
 
 .anchor {
@@ -358,10 +357,6 @@ a {
     visibility: hidden;
     margin-top: -25px;
     padding-top: 37px;
-}
-
-.contact_links:hover {
-    color: darkblue;
 }
 
 /* Screen less than 600px */
@@ -422,8 +417,8 @@ a {
     }
 
     .project_li {
-        font-size: 13px;
-        line-height: 39px;
+        font-size: .75rem;
+        line-height: 2.15rem;
         margin: 0 15px 10px 0;
         padding: 5px 3px;
         background: lightgrey;
@@ -481,6 +476,7 @@ a {
     }
     
     .contact_section {
+        margin: unset;
         border-bottom: 1px solid black;
         -webkit-box-shadow: 0 7px 0 -2px rgba(0, 0, 0, 0.25);
         -moz-box-shadow: 0 7px 0 -2px rgba(0, 0, 0, 0.25);
@@ -488,6 +484,6 @@ a {
     }
 
     .contact {
-        height: 140px;
+        padding-bottom: 22px;
     }
 }
