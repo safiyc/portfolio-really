@@ -1,16 +1,16 @@
 // sticky the horizontal navbar to the top after scroll to its div
-window.onscroll = function() {fixedToTop()};
+window.onscroll = function () { fixedToTop() };
 
 let navLinks = document.getElementById("nav_links");
 let navLinksSticky = navLinks.offsetTop;
 
 function fixedToTop() {
 
-    if (window.pageYOffset > navLinksSticky) {
-        navLinks.classList.add("nav_links_sticky");
-    } else {
-        navLinks.classList.remove("nav_links_sticky");
-    }
+  if (window.pageYOffset > navLinksSticky) {
+    navLinks.classList.add("nav_links_sticky");
+  } else {
+    navLinks.classList.remove("nav_links_sticky");
+  }
 }
 
 // get current year
