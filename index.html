@@ -1,30 +1,36 @@
 <!DOCTYPE html>
 <html>
-
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="css/style.css">
   <link rel="icon" href="img/my_favicon.png">
+  <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
   <title>Safiy Cham - Portfolio</title>
 </head>
-
 <body>
-  <div id="stars_static"></div>
+  <div class="shooting_stars" id="shooting_star1"></div>
+  <div class="shooting_stars" id="shooting_star2"></div>
+  <div class="shooting_stars" id="shooting_star3"></div>
+  <div class="shooting_stars" id="shooting_star4"></div>
+  <div id="stars_static1"></div>
   <div id="stars_static2"></div>
   <div id="daybreak_light"></div>
   <div id="clouds_footer"></div>
   <div class="wrapper">
     <a id="intro_anchor" class="anchor"></a>
     <div id="intro_section">
-      <h1>Hello World</h1>
+      <h1>Hello World!</h1>
       <div id="h1_bg"></div>
-      <div id="about_me_main">
-        <div class="about_me_frame">
-          <a href="https://github.com/safiyc" target="_blank">
-            <img src="img/about_me_img.jpg" alt="Laptop And Code" class="about_me_img">
-            <img src="img/code-screen.png" alt="Screenshot of Code" class="about_me_img_overlay">
-          </a>
+      <div id="hello_frame">
+        <div class="tapes" id="tape1"></div>
+        <div class="tapes" id="tape2"></div>
+        <div class="tapes" id="tape3"></div>
+        <div class="slider" id="slider1">
+          <img src="img/hello-photo.jpg" alt="Laptop And Code" class="slide">
+          <img src="img/hello-code.png" alt="Screenshot of Code" class="slide">
+          <button class="slide_btn slide_btn_left" onclick="slideImage(this,-1)">&#10094;</button>
+          <button class="slide_btn slide_btn_right" onclick="slideImage(this,1)">&#10095;</button>
         </div>
         <p class="my_name">Safiy Cham</p>
         <p class="my_title">Front End Web Developer</p>
@@ -34,8 +40,7 @@
       <ul>
         <li class="nav_links_li"><a href="#skills_anchor">Skills</a></li>
         <li class="nav_links_li"><a href="#projects_anchor">Projects</a></li>
-        <li class="nav_links_li"><a href="#about_contact_anchor">About&nbsp;Me</a></li>
-        <li class="nav_links_li"><a href="#about_contact_anchor">Contact</a></li>
+        <li class="nav_links_li"><a href="#about_contact_anchor">Contact About</a></li>
         <li class="nav_links_li"><a href="#intro_anchor">Top</a></li>
       </ul>
     </div>
@@ -47,31 +52,32 @@
           <li class="skill_list"><img src="img/html-icon2.png" alt="icon" class="skill_icons"><br />HTML5</li>
           <li class="skill_list"><img src="img/css-icon2.png" alt="icon" class="skill_icons"><br />CSS3</li>
           <li class="skill_list"><img src="img/js-icon2.png" alt="icon" class="skill_icons"><br />JavaScript</li>
-          <!-- <li class="skill_list"><img src="img/ruby-icon2.png" alt="icon" class="skill_icons"><br />Ruby</li> -->
-          <li class="skill_list"><img src="img/photoshop-icon2.png" alt="icon" class="skill_icons"><br />Photoshop</li>
+          <li class="skill_list"><img src="img/photoshop-icon2.png" alt="icon" class="skill_icons"><br />Photoshop
+          </li>
         </ul>
         <p class="paragraphs">
-          I am a self-taught front-end developer in the Pacific Northwest of the United States. My projects highlight my
-          experiences with <strong class="text_black">Bootstrap</strong> (CSS), <strong
-            class="text_black">jQuery</strong> (JS), <strong class="text_black">Angular</strong>
-          (JS), <strong class="text_black">Node</strong> (JS), <strong class="text_black">Rails</strong> (Ruby), <strong
-            class="text_black">Sinatra</strong> (Ruby),
-          <strong class="text_black">PostgreSQL</strong> (Database), <strong class="text_black">Firebase</strong>
-          (Database), <strong class="text_black">TypeScript</strong>
-          (JS), <strong class="text_black">Jasmine</strong> (Testing), <strong class="text_black">Karma</strong>
-          (Testing), <strong class="text_black">RSpec</strong> (Testing),
-          <strong class="text_black">AJAX</strong>, <strong class="text_black">RESTful API</strong>, and more. I don't
+          My projects highlight
+          my
+          experiences with <span class="text_white">Bootstrap</span> (CSS), <span class="text_white">jQuery</span>
+          (JS),
+          <span class="text_white">Angular</span>
+          (JS), <span class="text_white">Node</span> (JS), <span class="text_white">Rails</span> (Ruby), <span
+            class="text_white">Sinatra</span> (Ruby),
+          <span class="text_white">PostgreSQL</span> (Database), <span class="text_white">Firebase</span>
+          (Database), <span class="text_white">TypeScript</span>
+          (JS), <span class="text_white">Jasmine</span> (Testing), <span class="text_white">Karma</span>
+          (Testing), <span class="text_white">RSpec</span> (Testing),
+          <span class="text_white">AJAX</span>, <span class="text_white">RESTful API</span>, and more. I don't
           claim expertise on everything listed
-          here, but I have completed projects using these technologies and coding concepts.
+          here, but I have completed projects using these technologies and concepts.
         </p>
       </div>
       <a id="projects_anchor" class="anchor"></a>
       <div class="section">
         <h2>Projects</h2>
-        <p class="paragraphs">
-          The source code for these projects and other projects can be found on my <a href="https://github.com/safiyc"
-            target="_blank" class="contact_links">GitHub</a> page. Click on the title of a project to explore its GitHub
-          repository. Launch a project by clicking on its image.
+        <p class="paragraphs" style="text-align: center;">
+          Other projects can be found on my <a href="https://github.com/safiyc" target="_blank"
+            class="contact_links">GitHub</a> page.
         </p>
         <div class="projects_sides">
           <div class="projects_side_links">
@@ -81,10 +87,8 @@
               <li class="project_li"><span><a href="#project_2">Rock Paper Scissors</a></span></li>
               <li class="project_li"><span><a href="#project_3">Stores-Shoes Tracker</a></span></li>
               <li class="project_li"><span><a href="#project_4">Value Crafts</a></span></li>
-              <li class="project_li"><span><a href="#project_8">ABC-Loop</a></span></li>
-              <!-- <li class="project_li"><span><a href="#project_5">xxx</a></span></li>
-                                <li class="project_li"><span><a href="#project_6">xxx</a></span></li> -->
-              <li class="project_li"><span><a href="#project_7">Website Mockup</a></span></li>
+              <li class="project_li"><span><a href="#project_5">ABC-Loop</a></span></li>
+              <li class="project_li"><span><a href="#project_mock">Website Mockup</a></span></li>
             </ul>
           </div>
           <div class="projects_side_right">
@@ -92,148 +96,161 @@
               <div>
                 <a id="project_1" class="project_anchor"></a>
                 <div class="project">
-                  <div class="project_frame">
-                    <a href="https://safiyc.github.io/reveal-the-image/" target="_blank">
-                      <img src="img/reveal_the_image.png" alt="Reveal The Image" class="project_img">
-                      <div class="project_txt_overlay">
-                        A game involving guessing the correct randomized hidden animal by clicking away blocks to reveal
-                        the answer. The timer counts down upon the first block click. Initials and high scores are saved
-                        from high to low in local storage.
-                      </div>
-                    </a>
+                  <div class="project_frame slider" id="slider_project1">
+                    <img src="img/reveal_the_image1.png" alt="Reveal The Image" class="project_img slide">
+                    <img src="img/reveal_the_image2.png" alt="Reveal The Image" class="project_img slide">
+                    <img src="img/reveal_the_image3.png" alt="Reveal The Image" class="project_img slide">
+                    <div class="project_txt_overlay slide">
+                      A game involving guessing the correct randomized hidden animal by clicking away blocks to
+                      reveal
+                      the answer. The timer counts down upon the first block click. Initials and high scores are
+                      saved
+                      from high to low in local storage.
+                    </div>
+                    <button class="slide_btn slide_btn_left" onclick="slideImage(this,-1)">&#10094;</button>
+                    <button class="slide_btn slide_btn_right" onclick="slideImage(this,1)">&#10095;</button>
                   </div>
                   <div class="project_info_box">
-                    &lt;<a href="https://github.com/safiyc/reveal-the-image.git" target="_blank"
-                      class="project_info_title">&nbsp;reveal the image&nbsp;</a>&gt;
+                    <div class="launch_btns">
+                      <a href="https://github.com/safiyc/reveal-the-image.git" target="_blank"
+                        class="project_info_title"><button class="launch_btn">check code</button></a>
+                      <a href="https://safiyc.github.io/reveal-the-image/" target="_blank">
+                        <button class="launch_btn">launch app</button></a>
+                    </div>
                     <p class="project_info_tech">HTML CSS JS</p>
+                    <p class="project_info_title">&#91;reveal the image&#93;</p>
                   </div>
                 </div>
               </div>
               <div>
                 <a id="project_2" class="project_anchor"></a>
                 <div class="project">
-                  <div class="project_frame">
-                    <a href="https://safiyc.github.io/rock-paper-scissors/" target="_blank">
-                      <img src="img/rock_paper_scissors.png" alt="Rock Paper Scissors" class="project_img">
-                      <div class="project_txt_overlay">
-                        This classic game of rock, paper and scissors is played against a computer player. After 5
-                        rounds, a winner is announced. If it is a draw on the 5th round, the game continues until a
-                        winner is determined.
-                      </div>
-                    </a>
+                  <div class="project_frame slider" id="slider_project2">
+                    <img src="img/rock_paper_scissors1.png" alt="Rock Paper Scissors" class="project_img slide">
+                    <img src="img/rock_paper_scissors2.png" alt="Rock Paper Scissors" class="project_img slide">
+                    <div class="project_txt_overlay slide">
+                      This classic game of rock, paper and scissors is played against a computer player. After 5
+                      rounds, a winner is announced. If it is a draw on the 5th round, the game continues until a
+                      winner is determined.
+                    </div>
+                    <button class="slide_btn slide_btn_left" onclick="slideImage(this,-1)">&#10094;</button>
+                    <button class="slide_btn slide_btn_right" onclick="slideImage(this,1)">&#10095;</button>
                   </div>
                   <div class="project_info_box">
-                    &lt;<a href="https://github.com/safiyc/rock-paper-scissors.git" target="_blank"
-                      class="project_info_title">&nbsp;rock paper scissors&nbsp;</a>&gt;
+                    <div class="launch_btns">
+                      <a href="https://github.com/safiyc/rock-paper-scissors.git" target="_blank"
+                        class="project_info_title"><button class="launch_btn">check code</button></a>
+                      <a href="https://safiyc.github.io/rock-paper-scissors/" target="_blank">
+                        <button class="launch_btn">launch app</button></a>
+                    </div>
                     <p class="project_info_tech">HTML CSS JS</p>
+                    <p class="project_info_title">&#91;rock paper scissors&#93;</p>
                   </div>
                 </div>
               </div>
               <div>
                 <a id="project_3" class="project_anchor"></a>
                 <div class="project">
-                  <div class="project_frame">
-                    <a href="https://stores-shoes-tracker.herokuapp.com/" target="_blank">
-                      <img src="img/stores_shoes_tracker.png" alt="Shoes-Stores Tracker" class="project_img">
-                      <div class="project_txt_overlay">
-                        This program lets the user create, update and delete stores. The user can also create, update
-                        and delete shoes and prices. Shoes can be added to stores. A store can't have duplicate shoes.
-                      </div>
-                    </a>
+                  <div class="project_frame slider" id="slider_project3">
+                    <img src="img/stores_shoes_tracker1.png" alt="Shoes-Stores Tracker" class="project_img slide">
+                    <img src="img/stores_shoes_tracker2.png" alt="Shoes-Stores Tracker" class="project_img slide">
+                    <img src="img/stores_shoes_tracker3.png" alt="Shoes-Stores Tracker" class="project_img slide">
+                    <div class="project_txt_overlay slide">
+                      This program lets the user create, update and delete stores. The user can also create, update
+                      and delete shoes and prices. Shoes can be added to stores. A store can't have duplicate shoes.
+                    </div>
+                    <button class="slide_btn slide_btn_left" onclick="slideImage(this,-1)">&#10094;</button>
+                    <button class="slide_btn slide_btn_right" onclick="slideImage(this,1)">&#10095;</button>
                   </div>
                   <div class="project_info_box">
-                    &lt;<a href="https://github.com/safiyc/stores_shoes_tracker.git" target="_blank"
-                      class="project_info_title">&nbsp;stores-shoes tracker&nbsp;</a>&gt;
-                    <p class="project_info_tech">HTML CSS Ruby Sinatra PostgreSQL</p>
+                    <div class="launch_btns">
+                      <a href=https://github.com/safiyc/stores_shoes_tracker.git target="_blank"
+                        class="project_info_title"><button class="launch_btn">check code</button></a>
+                      <a href="https://stores-shoes-tracker.herokuapp.com/" target="_blank">
+                        <button class="launch_btn">launch app</button></a>
+                    </div>
+                    <p class="project_info_tech">Ruby Sinatra PostgreSQL</p>
+                    <p class="project_info_title">&#91;stores-shoes tracker&#93;</p>
                   </div>
                 </div>
               </div>
               <div>
                 <a id="project_4" class="project_anchor"></a>
                 <div class="project">
-                  <div class="project_frame">
-                    <a href="https://value-crafts.herokuapp.com/" target="_blank">
-                      <img src="img/craftsy.png" alt="Value Crafts" class="project_img">
-                      <div class="project_txt_overlay">
-                        An e-commerce site allowing an admin user to add/delete products and remove reviews. Basic users
-                        can add products to the cart, and they can also rate and comment on products.
-                      </div>
-                    </a>
+                  <div class="project_frame slider" id="slider_project4">
+                    <img src="img/craftsy1.png" alt="Value Crafts" class="project_img slide">
+                    <img src="img/craftsy2.png" alt="Value Crafts" class="project_img slide">
+                    <img src="img/craftsy3.png" alt="Value Crafts" class="project_img slide">
+                    <div class="project_txt_overlay slide">
+                      An e-commerce site allowing an admin user to add/delete products and remove reviews. Basic
+                      users
+                      can add products to the cart, and they can also rate and comment on products.
+                    </div>
+                    <button class="slide_btn slide_btn_left" onclick="slideImage(this,-1)">&#10094;</button>
+                    <button class="slide_btn slide_btn_right" onclick="slideImage(this,1)">&#10095;</button>
+                    <!-- </a> -->
                   </div>
                   <div class="project_info_box">
-                    &lt;<a href="https://github.com/safiyc/craftsy.git" target="_blank"
-                      class="project_info_title">&nbsp;value crafts&nbsp;</a>&gt;
-                    <p class="project_info_tech">HTML CSS Ruby Rails PostgreSQL</p>
+                    <div class="launch_btns">
+                      <a href="https://github.com/safiyc/craftsy.git" target="_blank" class="project_info_title"><button
+                          class="launch_btn">check code</button></a>
+                      <a href="https://value-crafts.herokuapp.com/" target="_blank">
+                        <button class="launch_btn">launch app</button></a>
+                    </div>
+                    <p class="project_info_tech">Ruby Rails PostgreSQL</p>
+                    <p class="project_info_title">&#91;value crafts&#93;</p>
                   </div>
                 </div>
               </div>
               <div>
-                <a id="project_8" class="project_anchor"></a>
+                <a id="project_5" class="project_anchor"></a>
                 <div class="project">
-                  <div class="project_frame">
-                    <a href="https://safiyc.github.io/abc-loop/" target="_blank">
-                      <img src="img/abc_loop.png" alt="Reveal The Image" class="project_img">
-                      <div class="project_txt_overlay">
-                        A project for my 2-3 years old nephew to learn ABC. Click/keypress or touch a letter to trigger
-                        a sound/image event. Interact with the same letter to loop through words associated with said
-                        letter.
-                      </div>
-                    </a>
+                  <div class="project_frame slider" id="slider_project5">
+                    <img src="img/abc_loop1.png" alt="Reveal The Image" class="project_img slide">
+                    <img src="img/abc_loop2.PNG" alt="Reveal The Image" class="project_img slide">
+                    <img src="img/abc_loop3.png" alt="Reveal The Image" class="project_img slide">
+                    <div class="project_txt_overlay slide">
+                      A project for my 2-3 years old nephew to learn ABC. Click/keypress or touch a letter to
+                      trigger
+                      a sound/image event. Interact with the same letter to loop through words associated with said
+                      letter.
+                    </div>
+                    <button class="slide_btn slide_btn_left" onclick="slideImage(this,-1)">&#10094;</button>
+                    <button class="slide_btn slide_btn_right" onclick="slideImage(this,1)">&#10095;</button>
+                    <!-- </a> -->
                   </div>
                   <div class="project_info_box">
-                    &lt;<a href="https://github.com/safiyc/abc-loop.git" target="_blank"
-                      class="project_info_title">&nbsp;abc-loop&nbsp;</a>&gt;
+                    <div class="launch_btns">
+                      <a href="https://github.com/safiyc/abc-loop.git" target="_blank"
+                        class="project_info_title"><button class="launch_btn">check code</button></a>
+                      <a href="https://safiyc.github.io/abc-loop/" target="_blank">
+                        <button class="launch_btn">launch app</button></a>
+                    </div>
                     <p class="project_info_tech">HTML CSS JS</p>
+                    <p class="project_info_title">&#91;abc-loop&#93;</p>
                   </div>
                 </div>
               </div>
-              <!-- <div>
-                                    <a id="project_5" class="project_anchor"></a>
-                                    <div class="project">
-                                        <div class="project_frame">
-                                            <a href="#" target="_blank">
-                                                <br>
-                                                project will be uploaded soon...
-                                            </a>
-                                        </div>
-                                        <div class="project_info_box">
-                                            &lt;<a href="#" class="project_info_title">&nbsp;xxx&nbsp;</a>&gt;
-                                            <p class="project_info_tech">HTML CSS Angular2 NodeJS Firebase</p>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div>
-                                    <a id="project_6" class="project_anchor"></a>
-                                    <div class="project">
-                                        <div class="project_frame">
-                                            <a href="#" target="_blank">
-                                                <br>
-                                                project will be uploaded soon...
-                                            </a>
-                                        </div>
-                                        <div class="project_info_box">
-                                            &lt;<a href="#" class="project_info_title">&nbsp;xxx&nbsp;</a>&gt;
-                                            <p class="project_info_tech">HTML CSS JS RESTful API</p>
-                                        </div>
-                                    </div>
-                                </div> -->
               <div>
-                <a id="project_7" class="project_anchor"></a>
+                <a id="project_mock" class="project_anchor"></a>
                 <div class="project">
-                  <div class="project_frame">
-                    <a href="mocksite.html" target="_blank">
-                      <img src="img/khmer_mockup.png" alt="Khmer Mockup" class="project_img">
-                      <div class="project_txt_overlay">
-                        A mockup of an edutainment web app on learning the Cambodian language, Khmer. I had been
-                        learning to read and write Khmer via out of print books. This mockup was born from a desire for
-                        a user-friendly way to learn Khmer.
-                      </div>
-                    </a>
+                  <div class="project_frame slider" id="slider_projectMock">
+                    <img src="img/khmer_mockup.png" alt="Khmer Mockup" class="project_img slide">
+                    <div class="project_txt_overlay slide">
+                      A mockup of an edutainment web app on learning the Cambodian language, Khmer. I had been
+                      learning to read and write Khmer via out of print books. This mockup was born from a desire
+                      for
+                      a user-friendly way to learn Khmer.
+                    </div>
+                    <button class="slide_btn slide_btn_left" onclick="slideImage(this,-1)">&#10094;</button>
+                    <button class="slide_btn slide_btn_right" onclick="slideImage(this,1)">&#10095;</button>
                   </div>
                   <div class="project_info_box">
-                    &lt;<a href="mocksite.html" target="_blank" class="project_info_title">&nbsp;website
-                      mockup&nbsp;</a>&gt;
-                    <p class="project_info_tech">PHOTOSHOP</p>
+                    <a href="mocksite.html" target="_blank" class="launch_link">
+                      <button class="launch_mock_btn">launch</button>
+                    </a>
+                    <p class="project_info_tech">Photoshop</p>
+                    <p class="project_info_title">&#91;website mockup&#93;</p>
                   </div>
                 </div>
               </div>
@@ -242,7 +259,7 @@
         </div>
       </div>
       <a id="about_contact_anchor" class="anchor"></a>
-      <div class="about_contact section">
+      <div class="about_contact">
         <div class="contact_section">
           <h2>Contact</h2>
           <div class="contact">
@@ -258,26 +275,35 @@
         </div>
         <div class="about_section">
           <h2>About Me</h2>
-          <p class="paragraphs text_black">
-            My coding journey began at a coding bootcamp. Now done with the bootcamp curriculum, I continue to build
-            projects and solve coding problems to gain coding experience. I attend coding meetups to be surrounded in
-            the world of web development and give myself exposure to new technologies.
-          </p>
-          <p class="paragraphs text_black">
+          <p class="paragraphs">
+            I am a front-end developer in the Pacific Northwest of the United States. After going through a grueling,
+            yet
+            rewarding,
+            25-week coding bootcamp, I continue my learning by building
+            projects and solving coding problems to gain coding experience. I frequent coding meetups and occasionally
+            participate in hackathons to immerse myself in
+            the world of web development.
+            <!-- </p>
+          <p class="paragraphs"> -->
+            <br />
+            <br />
             Besides programming, I enjoy building models using 3D softwares. I make time for my creative side to keep
-            myself calibrated. Another outlet is doodling in my sketchbook. I'm slowly adding learning the guitar in the
+            myself calibrated. Another outlet is doodling in my sketchbook. I'm slowly adding learning the guitar in
+            the
             mix.
-          </p>
-          <p class="paragraphs text_black">
-            Other activities I enjoy include trying new hiking trails, running, and video gaming... nowadays, I'm moreso
+            <!-- </p>
+          <p class="paragraphs"> -->
+            <br />
+            <br />
+            Other activities I enjoy include trying new hiking trails, running, and video gaming... nowadays, I'm
+            moreso
             drafting game design ideas, rather than actually playing them.
           </p>
         </div>
       </div>
-      <footer>Website By Safiy Cham &nbsp;&#169;&nbsp;<span id="copyright"></span></footer>
     </div>
   </div>
+  <footer>Website By Safiy Cham &nbsp;&#169;&nbsp;<span id="copyright"></span></footer>
   <script src="./js/scripts.js"></script>
 </body>
-
 </html>
