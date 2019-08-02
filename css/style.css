@@ -19,6 +19,7 @@ body, html {
   position: relative;
 }
 
+/* #region Bg */
 #daybreak_light {
   position: absolute;
   width: 100%;
@@ -40,6 +41,37 @@ body, html {
   z-index: 2;
 }
 
+#stars_static1 {
+  position: fixed;
+  background-repeat: repeat;
+  background-image: url('../img/stars_static.png');
+  height: 105vh;
+  width: 100vw;
+  z-index: -1;
+  animation: stars_twinkle 4s ease-in-out infinite;
+}
+
+@keyframes stars_twinkle {
+  0%, 100% {
+    opacity: .2;
+  }
+  50% {
+    opacity: .5;
+  }
+}
+
+#stars_static2 {
+  position: fixed;
+  background-repeat: repeat;
+  background-image: url('../img/stars_static2.png');
+  height: 105vh;
+  width: 100vw;
+  z-index: -5;
+  opacity: .75;
+}
+/* #endregion */
+
+/* #region shoot_stars */
 .shooting_stars {
   position: fixed;
   width: 8px;
@@ -230,35 +262,7 @@ body, html {
     box-shadow: none;
   }
 }
-
-#stars_static1 {
-  position: fixed;
-  background-repeat: repeat;
-  background-image: url('../img/stars_static.png');
-  height: 105vh;
-  width: 100vw;
-  z-index: -1;
-  animation: stars_twinkle 4s ease-in-out infinite;
-}
-
-@keyframes stars_twinkle {
-  0%, 100% {
-    opacity: .2;
-  }
-  50% {
-    opacity: .5;
-  }
-}
-
-#stars_static2 {
-  position: fixed;
-  background-repeat: repeat;
-  background-image: url('../img/stars_static2.png');
-  height: 105vh;
-  width: 100vw;
-  z-index: -5;
-  opacity: .75;
-}
+/* #endregion */
 
 .wrapper {
   margin: 0 auto;
@@ -312,7 +316,6 @@ h1 {
   z-index: 5;
   padding-bottom: 5px;
   padding-top: 20px;
-  /* background-color: rgba(182, 182, 255, .3); */
 }
 
 #h1_bg {
@@ -354,17 +357,12 @@ h1 {
 .paragraphs {
   font-size: 16px;
   line-height: 28px;
-  padding: 0 6px;
+  padding: 0 15px;
   text-align: justify;
-  /* background-color: rgba(255,255,255,.1);
-  box-shadow: 0 2px 5px 2px rgba(255,255,255,.05), 
-        0 0 1px 0 rgba(255,255,255,.05); */
 }
 
 .text_white {
   color: white;
-  font-size: 16px;
-  line-height: 28px;
   font-weight: 550;
 }
 
@@ -545,8 +543,9 @@ ul {
   box-shadow: 0 0 3px 3px black;
 }
 
+/* #region skills */
 .skills {
-  margin: -15px 0 5px;
+  margin: -8px 0 5px;
 }
 
 .skill_list {
@@ -573,9 +572,11 @@ ul {
   -moz-box-shadow: 0 0 2px 2px black;
   box-shadow: 0 0 2px 2px black;
 }
+/* #endregion */
 
+/* #region projects */
 .projects_sides {
-  margin-bottom: 20px;
+  margin-bottom: 24px;
 }
 
 .projects_side_links {
@@ -635,7 +636,6 @@ ul {
   width: 190px;
   height: 190px;
   margin: 10px auto 0;
-
   border: 1px solid rgba(0, 0, 0, 0.75);
 }
 
@@ -653,7 +653,6 @@ ul {
 
 .project_info_box {
   font-weight: bold;
-
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
@@ -663,14 +662,12 @@ ul {
 }
 
 .launch_btns {
-
   display: flex;
   border: 1px solid black;
   border-radius: 1px;
 }
 
 .launch_btn {
-
   background-color: none;
   width: 94px;
   height: 25px;
@@ -679,19 +676,16 @@ ul {
 }
 
 .launch_btn:hover {
-
   background-color: lightgreen;
 }
 
 .launch_link {
-
   display: block;
   width: 100%;
   border: 1px solid black;
 }
 
 .launch_mock_btn {
-
   width: 100%;
   background-color: white;
   height: 25px;
@@ -711,23 +705,21 @@ ul {
 .project_info_tech {
   margin: 2px auto 0;
   font-size: .9rem;
-
   width: 100%;
 }
+/* #endregion */
 
 .about_contact {
   text-align: justify;
   padding-bottom: 10px;
   padding-top: 10px;
   background-image: linear-gradient(rgba(144, 238, 144, 0.3) 0%, rgba(144, 238, 144, 0.3) 80%, rgba(0,0,0,0) 100%);
-
-
   margin: 0 auto;
 }
 
 .about_section {
   margin: 0 4px;
-  padding: 10px 0 100px;
+  padding: 10px 0 150px;
 }
 
 .contact_section {
@@ -737,16 +729,74 @@ ul {
   -webkit-box-shadow: 0 10px 0 -3px rgba(0, 60, 0, 0.2);
   -moz-box-shadow: 0 10px 0 -3px rgba(0, 60, 0, 0.2);
   box-shadow: 0 10px 0 -3px rgba(0, 60, 0, 0.2);
-  padding-bottom: 20px;
+  padding-bottom: 34px;
+}
+
+fieldset {
+  border: 10px solid rgba(255,255,255,.35);
+  margin: 0 auto;
+  width: 80%;
+  padding: 8px;
+}
+
+fieldset > * {
+  background-color: rgba(255,255,255,.35);
+  font-size: 16px;
+  font-family: inherit;
+}
+
+fieldset > legend {
+  margin: 0 auto;
+  padding: 8px 0;
+  height: 30px;
+  width: 100px;
+}
+
+fieldset > input {
+  width: 100%;
+  margin: 2px 0;
+  padding: 2px 6px;
+  border: none;
+}
+
+fieldset > textarea {
+  width: 100%;
+  min-height: 100px;
+  margin: 2px 0;
+  padding: 2px 6px;
+  border: none;
+}
+
+fieldset > button {
+  width: 100px;
+  padding: 8px 0;
+  border: none;
+  border-radius: 20px;
+  font-weight: 600;
+  margin: 0 auto 2px;
+}
+
+fieldset > button:hover {
+  background-color: lightgreen;
 }
 
 .contact_links {
+  -webkit-filter: invert(100%) opacity(35%);
+  filter: invert(100%) opacity(35%);
+  margin: -5px 0 5px;
+}
+
+.contact_links:hover {
+  -webkit-filter: opacity(60%);
+  filter: opacity(60%);
+}
+
+#contact_github {
   color: darkblue;
   font-weight: 600;
 }
 
-.contact_links:hover {
-  color: black;
+#contact_github:hover {
   text-decoration: underline;
 }
 
@@ -778,23 +828,20 @@ a {
   padding-top: 37px;
 }
 
-
+/* #region tablet and mobile */
 /* Screen 770px and down */
 @media only screen and (max-width: 770px) {
   .wrapper {
     width: 98%;
     max-width: 500px;
-    min-width: 400px;
-
+    min-width: 360px;
     padding: 0;
-    /* background-color: unset; */
   }
 
   #hello_frame {
     width: 85%;
     max-width: 415px;
-    min-width: 375px;
-    /* margin-top: 45px; */
+    min-width: 360px;
   }
 
   .nav_links_li {
@@ -802,7 +849,7 @@ a {
   }
 
   .skill_list {
-    font-size: 12px;
+    font-size: 16px;
     font-weight: bold;
     text-align: center;
     margin: 0 5px;
@@ -814,6 +861,7 @@ a {
 
   .projects_sides {
     display: flex;
+    margin-bottom: 20px;
   }
 
   h4 {
@@ -885,6 +933,7 @@ a {
   .about_section {
     margin: 0 auto;
     min-width: 100%;
+    padding-bottom: 80px;
   }
 
   .contact_section {
@@ -895,3 +944,4 @@ a {
     box-shadow: 0 10px 0 -3px rgba(0, 60, 0, 0.2);
   }
 }
+/* #endregion */
