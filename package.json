@@ -1,0 +1,23 @@
+{
+  "name": "static-site-mailer",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/safiyc/portfolio-really.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/safiyc/portfolio-really/issues"
+  },
+  "homepage": "https://github.com/safiyc/portfolio-really#readme",
+  "dependencies": {
+    "aws-sdk": "^2.504.0",
+    "serverless": "^1.49.0"
+  }
+}

@@ -780,6 +780,11 @@ fieldset > button:hover {
   background-color: lightgreen;
 }
 
+#js_form_response {
+  margin-top: 6px;
+  height: 18px;
+}
+
 .contact_links {
   -webkit-filter: invert(100%) opacity(35%);
   filter: invert(100%) opacity(35%);

@@ -268,16 +268,18 @@
             <a href="https://github.com/safiyc" target="_blank">
               <img src="img/github-black.png" alt="Github Logo" class="contact_links">
             </a>
-            <form action="#" id="contact_form">
+            <form id="contact_form"
+              action="https://tgpkbd8bxa.execute-api.us-west-2.amazonaws.com/dev/static-site-mailer" method="POST">
               <fieldset>
                 <legend>hello safi</legend>
-                <input type="text" name="name" placeholder="name" autocomplete="off">
+                <input type="text" name="name" placeholder="name" required>
                 <br />
-                <input type="text" name="email" placeholder="email" autocomplete="off">
+                <input type="email" name="reply_to" placeholder="email" required>
                 <br />
-                <textarea type="text" name="message" placeholder="comment"></textarea>
+                <textarea name="message" placeholder="comment" required></textarea>
                 <br />
-                <button type="submit">submit</button>
+                <button type="submit" id="submit">submit</button>
+                <div id="js_form_response"></div>
               </fieldset>
             </form>
           </div>
