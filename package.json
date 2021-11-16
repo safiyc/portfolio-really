@@ -17,7 +17,7 @@
   },
   "homepage": "https://github.com/safiyc/portfolio-really#readme",
   "dependencies": {
-    "aws-sdk": "^2.504.0",
+    "aws-sdk": "^2.814.0",
     "serverless": "^1.49.0"
   }
 }
